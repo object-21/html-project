@@ -72,6 +72,8 @@ footer {
   border-top: 1px solid #eee;
 }
 
+
+
 /* === Scroll to Top Button === */
 .scroll-to-top {
   width: 50px;
@@ -216,6 +218,8 @@ footer {
   color: #2c3e50;
 }
 
+
+
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
@@ -255,3 +259,4 @@ footer {
 .contact-form button:hover {
   background-color: #005e47;
 }
+
