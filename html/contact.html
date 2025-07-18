@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Us - HomeFinder</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact HomeFinder - Get in touch with our team for all your property needs">
+    <title>Contact Us - HomeFinder</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">HomeFinder</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="rent.html">Rent</a>
-      <a href="buy.html">Buy</a>
-      <a href="commercial.html">Commercial</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">HomeFinder</div>
+        <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="rent.html">Rent</a>
+            <a href="buy.html">Buy</a>
+            <a href="commercial.html">Commercial</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+    </header>
 
-  <section class="contact-section">
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-      <input type="text" class="input-container" placeholder="Your Name" required>
-      <input type="email" class="input-container" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <main>
+        <section class="hero">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team for all your property needs</p>
+        </section>
 
+        <section class="contact-form">
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-  <footer>
-    <p>©️ 2025 HomeFinder. All rights reserved.</p>
-  </footer>
-  <script src="../js/scripts.js"></script>
-  <a href="#" class="scroll-to-top">↑</a>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
 
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Our Office</h2>
+            <p>123 Property Street</p>
+            <p>City, State 12345</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@homefinder.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HomeFinder. All rights reserved.</p>
+    </footer>
+
+    <a href="#" class="scroll-to-top" aria-label="Scroll to top">↑</a>
+
+    <script src="../js/scripts.js"></script>
+    <script src="../js/regex.js"></script>
 </body>
 </html>

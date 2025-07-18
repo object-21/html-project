@@ -1,123 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Rent a Home - HomeFinder</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HomeFinder - Find your perfect rental property with our comprehensive listings">
+    <title>Rent Properties - HomeFinder</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">HomeFinder</div>
+        <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="rent.html" class="active">Rent</a>
+            <a href="buy.html">Buy</a>
+            <a href="commercial.html">Commercial</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+    </header>
 
-  <header>
-    <div class="logo">HomeFinder</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="rent.html" class="active">Rent</a>
-      <a href="buy.html">Buy</a>
-      <a href="commercial.html">Commercial</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <main>
+        <section class="hero">
+            <h1>Find Your Perfect Rental</h1>
+            <div class="search-container">
+                <label for="search" class="visually-hidden">Search rental properties</label>
+                <input id="search" type="text" placeholder="Search by city, type or price...">
+            </div>
+        </section>
 
-  <section class="hero">
-    <h1>Find Homes for Rent</h1>
-    <input type="text" placeholder="Search city, type, or price...">
-  </section>
+        <section class="properties">
+            <h2>Available Rentals</h2>
+            <div class="property-grid">
+                <article class="property-card">
+                    <img src="https://imgm.flyhomes.com/unsigned/rs:fill-down:1012:1012/g:fp:0.48:0.52/rs:fill-down:1012:1012//aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL21sc2dyaWQvaW1hZ2VzL01GUjc1MTM4NTQ3OS9lODU4NmFlYy1jN2JhLTQ1Y2EtOTViNi1mZWE3M2NmOGQyOGUuanBlZw" alt="Modern apartment for rent" loading="lazy">
+                    <h3>$1,800 / month</h3>
+                    <p>2 Bed, 2 Bath - Downtown</p>
+                </article>
 
-  <section class="properties">
-    <h2>Rental Listings</h2>
-    <div class="property-grid">
+                <article class="property-card">
+                    <img src="https://imgm.flyhomes.com/unsigned/rs:fill-down:1012:1012/g:fp:0.48:0.52/rs:fill-down:1012:1012//aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL21sc2dyaWQvaW1hZ2VzL01GUjc1NDU3ODkwOC82Y2IwMDE0NC00ZTJiLTRiNzItYjI1Zi03Njc0YTQ2ZTEwZmQuanBlZw" alt="Spacious townhouse for rent" loading="lazy">
+                    <h3>$2,200 / month</h3>
+                    <p>3 Bed, 2 Bath - Suburbs</p>
+                </article>
 
-      <div class="property-card">
-        <img src="https://imgm.flyhomes.com/unsigned/rs:fill-down:1012:1012/g:fp:0.48:0.52/rs:fill-down:1012:1012//aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL21sc2dyaWQvaW1hZ2VzL01GUjc1MTQzNzU4OC9mM2Y0ZDkzOC1jMDg1LTRlZjMtOWZiNC1hNGM4YzMzZTU3YjUuanBlZw" alt="Rental 1">
-        <h3>$1,800 / month</h3>
-        <p>2 Bed, 2 Bath - City Center</p>
-      </div>
+                <article class="property-card">
+                    <img src="https://imgp.flyhomes.com/unsigned/w:1280/cHVibGljOi8vc2VvLWtleXdvcmRzL21hbnNpb25zLWZvci1zYWxlLmpwZw" alt="Luxury penthouse for rent" loading="lazy">
+                    <h3>$3,500 / month</h3>
+                    <p>4 Bed, 3 Bath - City Center</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
-      <div class="property-card">
-        <img src="https://imgm.flyhomes.com/unsigned/rs:fill-down:1012:1012/g:fp:0.48:0.52/rs:fill-down:1012:1012//aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL21sc2dyaWQvaW1hZ2VzL01GUjc1NjcwNDI0MS9jOTQ0ZDhiYS0zMDBkLTQ3NTItYmZhNS05N2NmYzdlMjkyNDIuanBlZw" alt="Rental 2">
-        <h3>$1,200 / month</h3>
-        <p>1 Bed, 1 Bath - Suburbs</p>
-      </div>
+    <footer>
+        <p>&copy; 2025 HomeFinder. All rights reserved.</p>
+    </footer>
 
-      <div class="property-card">
-        <img src="https://imgl.flyhomes.com/unsigned/rs:fill-down:1012:1012/g:fp:0.48:0.52/rs:fill-down:1012:1012//bWxzOi8vNTUwMDg0MDkvMTEzNDAwMzk3MC9vcmlnaW5hbC5qcGc" alt="Rental 3">
-        <h3>$2,500 / month</h3>
-        <p>3 Bed, 2 Bath - Downtown</p>
-      </div>
-      <div class="property-card">
-        <img src="https://imgm.flyhomes.com/unsigned/rs:fill-down:1012:1012/g:fp:0.48:0.52/rs:fill-down:1012:1012//aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL21sc2dyaWQvaW1hZ2VzL01GUjc1MTM4NTQ3OS9lODU4NmFlYy1jN2JhLTQ1Y2EtOTViNi1mZWE3M2NmOGQyOGUuanBlZw" alt="Home 1">
-        <h3>$320,000</h3>
-        <p>3 Bed, 2 Bath - Downtown</p>
-      </div>
-      
-      <div class="property-card">
-        <img src="https://imgm.flyhomes.com/unsigned/rs:fill-down:1012:1012/g:fp:0.48:0.52/rs:fill-down:1012:1012//aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL21sc2dyaWQvaW1hZ2VzL01GUjc1NDU3ODkwOC82Y2IwMDE0NC00ZTJiLTRiNzItYjI1Zi03Njc0YTQ2ZTEwZmQuanBlZw" alt="Home 2">
-        <h3>$480,000</h3>
-        <p>4 Bed, 3 Bath - Suburbs</p>
-      </div>
-      
-      <div class="property-card">
-        <img src="https://imgp.flyhomes.com/unsigned/w:1280/cHVibGljOi8vc2VvLWtleXdvcmRzL21hbnNpb25zLWZvci1zYWxlLmpwZw" alt="Home 3">
-        <h3>$600,000</h3>
-        <p>5 Bed, 4 Bath - Gated Community</p>
-      </div>
-      
-      <div class="property-card">
-        <img src="https://imgm.flyhomes.com/unsigned/rs:fill-down:1012:1012/g:fp:0.48:0.52/rs:fill-down:1012:1012//aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL21sc2dyaWQvaW1hZ2VzL01GUjc1MjI1NTY0MS9jNjM5YjQxYy04YjM3LTQ2YjYtODg4OC05MzBiZGZlZmY3YTQuanBlZw" alt="Home 4">
-        <h3>$750,000</h3>
-        <p>4 Bed, 3 Bath - Beachfront</p>
-      </div>
-      
-      <div class="property-card">
-        <img src="https://imgm.flyhomes.com/unsigned/rs:fill-down:1012:1012/g:fp:0.48:0.52/rs:fill-down:1012:1012//aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL21sc2dyaWQvaW1hZ2VzL01GUjc1Njg4NzUzNS9mZjc2ZThjYy1hODg1LTQ4MTEtYjc2YS1jNzM4ZGYwYTc0NzQ5LnBuZw" alt="Home 5">
-        <h3>$540,000</h3>
-        <p>3 Bed, 2 Bath - Countryside</p>
-      </div>
-      
-      <div class="property-card">
-        <img src="https://imgm.flyhomes.com/unsigned/rs:fill-down:1012:1012/g:fp:0.48:0.52/rs:fill-down:1012:1012//aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL21sc2dyaWQvaW1hZ2VzL01GUjc1Njg4NzUzNS9mZjc2ZThjYy1hODg1LTQ4MTEtYjc2YS1jNzM4ZGYwYTc0NzQ5LnBuZw" alt="Home 6">
-        <h3>$450,000</h3>
-        <p>2 Bed, 1 Bath - Downtown</p>
-      </div>
-      
-      <div class="property-card">
-        <img src="https://imgp.flyhomes.com/unsigned/w:1280/cHVibGljOi8vc2VvLWtleXdvcmRzL21hbnNpb25zLWZvci1zYWxlLmpwZw" alt="Home 7">
-        <h3>$650,000</h3>
-        <p>4 Bed, 3 Bath - Mountain View</p>
-      </div>
-      
-      <div class="property-card">
-        <img src="https://imgm.flyhomes.com/unsigned/rs:fill-down:1012:1012/g:fp:0.48:0.52/rs:fill-down:1012:1012//aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL21sc2dyaWQvaW1hZ2VzL01GUjc1MTM4NTQ3OS9lODU4NmFlYy1jN2JhLTQ1Y2EtOTViNi1mZWE3M2NmOGQyOGUuanBlZw" alt="Home 8">
-        <h3>$320,000</h3>
-        <p>3 Bed, 2 Bath - Downtown</p>
-      </div>
-      
-      <div class="property-card">
-        <img src="https://imgp.flyhomes.com/unsigned/w:1280/cHVibGljOi8vc2VvLWtleXdvcmRzL21hbnNpb25zLWZvci1zYWxlLmpwZw" alt="Home 9">
-        <h3>$420,000</h3>
-        <p>3 Bed, 2 Bath - City Center</p>
-      </div>
-      
-      <div class="property-card">
-        <img src="https://imgm.flyhomes.com/unsigned/rs:fill-down:1012:1012/g:fp:0.48:0.52/rs:fill-down:1012:1012//aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL21sc2dyaWQvaW1hZ2VzL01GUjc1Njg4NzUzNS9mZjc2ZThjYy1hODg1LTQ4MTEtYjc2YS1jNzM4ZGYwYTc0NzQ5LnBuZw" alt="Home 10">
-        <h3>$800,000</h3>
-        <p>5 Bed, 4 Bath - Gated Community</p>
-      </div>
+    <a href="#" class="scroll-to-top" aria-label="Scroll to top">↑</a>
 
-
-
-
-
-
-    </div>
-  </section>
-
-  <footer>
-    <p>©️ 2025 HomeFinder. All rights reserved.</p>
-  </footer>
-
-  <script src="../js/scripts.js"></script>
-  <a href="#" class="scroll-to-top">↑</a>
-
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
